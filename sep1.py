@@ -5,8 +5,8 @@ import time
 
 options = {
     'proxy': {
-        'http': 'http://ae1f7c1abc21d6907425__cr.sg:83fc052021c1be3f@gw.dataimpulse.com:10101',
-        'https': 'https://ae1f7c1abc21d6907425__cr.sg:83fc052021c1be3f@gw.dataimpulse.com:10101',
+        'http': 'http://aa1bbb42ebf8047790d5__cr.us:005d3d6538c06a08@gw.dataimpulse.com:10001',
+        'https': 'https://aa1bbb42ebf8047790d5__cr.us:005d3d6538c06a08@gw.dataimpulse.com:10001',
         'no_proxy': 'localhost,127.0.0.1'
     }
 }
@@ -26,7 +26,7 @@ print(driver.page_source)
 
 time.sleep(1)
 
-driver.get("https://sepolia-faucet.pk910.de/#/mine/c896d076-f67c-4f72-88dd-f40ea20fd04e")
+driver.get("https://sepolia-faucet.pk910.de/#/mine/cfd2edf9-ee7c-40a2-a7f9-f44bf83d20a3")
 time.sleep(50)
 
 div_element = driver.find_element(By.CLASS_NAME, "col-3")
@@ -34,7 +34,7 @@ content_text = div_element.text
 print(content_text)
 
 #WAKTU MENUNGGU MINING SELESAI
-time.sleep(15000)
+time.sleep(150000)
 
 # Tutup browser
 driver.quit()
